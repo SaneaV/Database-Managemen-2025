@@ -1,0 +1,16 @@
+ID,AddressID,ShopID,CountryID,nume_gest,lat,long,Tara,Oras
+0,2000,2000,1000,Bucuresti1,44.426265,26.120147,Romania,Bucuresti
+1,2001,2001,1000,Iasi,47.173749,27.558493,Romania,Iasi
+2,2002,2002,1000,Buzau,45.154634,26.825395,Romania,Buzau
+3,2003,2003,1000,Galati,45.440599,28.048176,Romania,Galati
+4,2004,2004,1000,Bacau,46.57443,26.911168,Romania,Bacau
+5,2005,2005,1000,Timisoara,45.756763,21.226615,Romania,Timisoara
+6,2006,2006,1000,Cluj,46.77182,23.591911,Romania,Cluj
+7,2007,2007,1000,Bucuresti2,44.44175,26.137635,Romania,Bucuresti
+8,2008,2008,1000,Bucuresti,44.45413,26.097874,Romania,Bucuresti
+9,2009,2009,1000,Suceava,47.646406,26.251924,Romania,Suceava
+10,2010,2010,1000,Onesti,46.247864,26.766338,Romania,Onesti
+11,2011,2011,1000,Focsani,45.696169,27.183764,Romania,Focsani
+12,2012,2012,1000,Ploiesti,44.939468,26.024284,Romania,Ploiesti
+13,2013,2013,1000,Brasov,45.649943,25.607792,Romania,Brasov
+14,2014,2014,1000,Targu Mures,46.547026,24.560995,Romania,Targu Mures
