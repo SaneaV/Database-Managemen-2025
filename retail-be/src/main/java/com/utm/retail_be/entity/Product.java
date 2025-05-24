@@ -1,16 +1,14 @@
 package com.utm.retail_be.entity;
 
 import jakarta.persistence.*;
-import lombok.*;
-
-import java.util.UUID;
+import lombok.Data;
 
 @Entity
 @Data
 public class Product {
     @Id
     @Column(name = "product_id")
-    private UUID productID;
+    private Integer productID;
 
     @Column(nullable = false, length = 255)
     private String productName;
