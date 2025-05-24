@@ -1,34 +1,26 @@
 package com.utm.retail_be.csv.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import java.util.Objects;
 
 @Setter
 @Getter
+@AllArgsConstructor
+@ToString
 public class ShopDTO {
     private int id;
     private int addressId;
     private int shopId;
     private int countryId;
     private String numeGest;
-    private double lat;
-    private double lon;
+    private Float lat;
+    private Float lon;
     private String tara;
     private String oras;
-
-    public ShopDTO(int id, int addressId, int shopId, int countryId, String numeGest, double lat, double lon, String tara, String oras) {
-        this.id = id;
-        this.addressId = addressId;
-        this.shopId = shopId;
-        this.countryId = countryId;
-        this.numeGest = numeGest;
-        this.lat = lat;
-        this.lon = lon;
-        this.tara = tara;
-        this.oras = oras;
-    }
 
     @Override
     public boolean equals(Object o) {

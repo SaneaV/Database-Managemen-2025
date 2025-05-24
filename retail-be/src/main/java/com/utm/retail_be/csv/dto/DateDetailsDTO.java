@@ -11,6 +11,6 @@ public class DateDetailsDTO {
     private int id;
     private LocalDate dataBonData;
     private int sarbatoare;
-    private int ziua;
+    private short ziua;
 
 }

@@ -8,7 +8,7 @@ import lombok.Setter;
 @Getter
 @AllArgsConstructor
 public class ProductCategoryDTO {
-    private int id;
+    private Short id;
     private String denumireProdus;
     private String categorie;
     private String canalProdus;
