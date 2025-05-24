@@ -3,20 +3,21 @@ package com.utm.retail_be.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.sql.Timestamp;
-import java.util.UUID;
+import java.math.BigDecimal;
+import java.time.LocalDate;
 
 @Entity
 @Data
 public class Payment {
     @Id
     @Column(name = "payment_id")
-    private UUID paymentID;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer paymentID;
 
-    private Double totalAmount;
+    private BigDecimal totalAmount;
 
     @Column(nullable = false)
-    private Timestamp createDate;
+    private LocalDate createDate;
 
     @ManyToOne
     @JoinColumn(name = "shop_id")

@@ -10,7 +10,8 @@ import java.util.UUID;
 public class PaymentDetail {
     @Id
     @Column(name = "payment_detail_id")
-    private UUID paymentDetailID;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer paymentDetailID;
 
     @Column(nullable = false)
     private Float quantity;
