@@ -37,12 +37,12 @@ public class CSVImportService {
         if (clazz == DiscountDTO.class) {
             return (T) new DiscountDTO(line[0], line[1], Double.parseDouble(line[2]));
         } else if (clazz == DateDetailsDTO.class) {
-            return (T) new DateDetailsDTO(Integer.parseInt(line[0]), LocalDate.parse(line[1]), Integer.parseInt(line[2]), Integer.parseInt(line[3]));
+            return (T) new DateDetailsDTO(Integer.parseInt(line[0]), LocalDate.parse(line[1]), Integer.parseInt(line[2]), Short.parseShort(line[3]));
         } else if (clazz == ShopDTO.class) {
             return (T) new ShopDTO(Integer.parseInt(line[0]), Integer.parseInt(line[1]), Integer.parseInt(line[2]),
-                    Integer.parseInt(line[3]), line[4], Double.parseDouble(line[5]), Double.parseDouble(line[6]), line[7], line[8]);
+                    Integer.parseInt(line[3]), line[4], Float.parseFloat(line[5]), Float.parseFloat(line[6]), line[7], line[8]);
         } else if (clazz == ProductCategoryDTO.class) {
-            return (T) new ProductCategoryDTO(Integer.parseInt(line[0]), line[1], line[2], line[3]);
+            return (T) new ProductCategoryDTO(Short.parseShort(line[0]), line[1], line[2], line[3]);
         } else if (clazz == SalesDTO.class) {
             return (T) new SalesDTO(
                     LocalDate.parse(line[0], DATE_FORMATTER), // DATA_BON_DATA
